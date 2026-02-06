@@ -76,6 +76,7 @@ const Analytics = async ({ params }) => {
                     </td>
                     <td className="px-3 py-2 border-b border-zinc-800">
                       {d.toLocaleDateString("en-IN", {
+                        timeZone: "Asia/Kolkata",
                         year: "numeric",
                         month: "short",
                         day: "2-digit",
@@ -83,6 +84,7 @@ const Analytics = async ({ params }) => {
                     </td>
                     <td className="px-3 py-2 border-b border-zinc-800">
                       {d.toLocaleTimeString("en-IN", {
+                        timeZone: "Asia/Kolkata",
                         hour: "numeric",
                         minute: "2-digit",
                         hour12: true,
