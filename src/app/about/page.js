@@ -53,7 +53,7 @@ const About = () => {
                     <div className="w-fit flex gap-[3vw] items-center justify-between">
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saty.kr.jha@gmail.com&su=Let’s%20Connect&body=Hi%20Satyam..." target="_blank" rel="noopener noreferrer"><div className="bg-white hover:shadow-[0px_0px_5px_2px_#fff] active:shadow-[0px_0px_5px_2px_#fff] hover:scale-[1.1] active:scale-[0.9] transition-all p-2.5 rounded-full w-14"><div className="bg-black p-1.5 rounded-full"><img src="/gmail.svg" alt="gmail" /></div></div></a>
                         <a href="https://github.com/Satyam-kr-Jha" target="_blank" rel="noopener noreferrer"><div className="bg-white hover:shadow-[0px_0px_5px_2px_#fff] active:shadow-[0px_0px_5px_2px_#fff] hover:scale-[1.1] active:scale-[0.9] transition-all p-1 rounded-full w-14"><img src="/github.svg" alt="github" /></div></a>
-                        <a href="https://www.linkedin.com/in/saty-kr-jha/" target="_blank" rel="noopener noreferrer"><div className="bg-white hover:shadow-[0px_0px_5px_2px_#fff] active:shadow-[0px_0px_5px_2px_#fff] hover:scale-[1.1] active:scale-[0.9] transition-all p-2.5 rounded-full w-14"><img src="/linkedIn.svg" alt="linkedIn" /></div></a>
+                        <a href="https://www.linkedin.com/in/saty-kr-jha/" target="_blank" rel="noopener noreferrer"><div className="bg-white hover:shadow-[0px_0px_5px_2px_#fff] active:shadow-[0px_0px_5px_2px_#fff] hover:scale-[1.1] active:scale-[0.9] transition-all p-2.5 rounded-full w-14"><img src="/linkedin.svg" alt="linkedIn" /></div></a>
                     </div>
                 </div>
             </div>

@@ -37,9 +37,9 @@ const UrlTable = (props) => {
                 <td>
                   <div onClick={(e)=>{
                     e.stopPropagation()
-                    copy(`http://localhost:3000/${urldata.customUrl}`)
+                    copy(`${process.env.NEXT_PUBLIC_DOMAIN}${urldata.customUrl}`)
                   }}
-                  className="md:w-6 w-5 opacity-[0.5] hover:opacity-[0.8] active:opacity-[1]">
+                  className="md:w-6 w-5 opacity-[0.5] hover:opacity-[0.7] active:opacity-[1] active:scale-[0.9] transition-all duration-200">
                     <img src="/copy.svg" alt="" />
                   </div>
                 </td>

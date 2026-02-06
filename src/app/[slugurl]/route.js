@@ -1,5 +1,6 @@
 import connectDB from "@/lib/route";
 import urlModel from "@/models/urlModel";
+import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 
 export async function GET(req, { params }) {
@@ -8,25 +9,22 @@ export async function GET(req, { params }) {
         if (slugurl === 'favicon.ico') {
             return new NextResponse(null, { status: 204 });
         }
-        const ip = req.headers.get("x-forwarded-for")?.split(",")[0] ||
-            req.headers.get("x-real-ip") || "127.0.0.1";
-        let geo = { country_name: 'Unknown', region: 'Unknown' };
+        const h = headers();
 
-        try {
-            const geoRes = await fetch(`https://ipapi.co/${ip}/json/`, {cache: "no-store",});
-            if (geoRes.ok) geo = await geoRes.json();
-        } catch (error) {
-            console.log('Geo API failed, using defaults');
-        }
+        const geo = {
+            country: h.get("x-vercel-ip-country") || "Unknown",
+            region: h.get("x-vercel-ip-country-region") || "Unknown",
+            city: h.get("x-vercel-ip-city") || "Unknown",
+        };
         await connectDB()
         const url = await urlModel.findOneAndUpdate(
             { customUrl: slugurl },
             {
                 $inc: { 'analytic.click': 1 },
                 $push: {
-                    'analytic.country': geo.country_name || 'Unknown',
-                    'analytic.state': geo.region || 'Unknown',
-                    'analytic.city': geo.city || 'Unknown',
+                    'analytic.country': geo.country,
+                    'analytic.state': geo.region,
+                    'analytic.city': geo.city,
                     'analytic.visited': new Date()
                 },
             },
