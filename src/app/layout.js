@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "minlink",
-  description: "personalised custom url creating app",
+  title: "min-link",
+  description: "customize your project website url with personalised custom url",
 };
 
 export default function RootLayout({ children }) {
