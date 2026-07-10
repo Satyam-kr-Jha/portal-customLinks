@@ -4,6 +4,22 @@ A full-stack URL shortening platform I built to manage portfolio project links w
 # 🎯Project Overview
 Portal solves a simple problem: deployment URLs like `my-ecommerce-abc123.vercel.app` look unprofessional. With Portal, I can create clean branded links like `myname.link/ecommerce` to share on my resume, LinkedIn, and GitHub.
 
+---
+# ScreenShots
+
+## HomePage (Shows all the Links)
+<img width="1366" height="728" alt="home" src="https://github.com/user-attachments/assets/e1c9f9a5-dfe0-4ae2-906a-b2b96a1da39c" />
+
+## LogIn Page
+<img width="1366" height="728" alt="login" src="https://github.com/user-attachments/assets/c5b32956-9f24-4b49-953c-4ccb58f3837c" />
+
+## Generating URL Links
+<img width="1366" height="728" alt="gen" src="https://github.com/user-attachments/assets/b798a7d4-3c3b-44a6-b1da-c93162e78bf5" />
+
+## View Details
+<img width="1366" height="728" alt="info" src="https://github.com/user-attachments/assets/9b6c5991-c7d9-4b61-8d35-40c3a7fa7386" />
+
+----
 # ->What It Does
 - Creates custom short URLs for portfolio projects
 - Tracks clicks with geographic analytics (country, state, timestamps)
